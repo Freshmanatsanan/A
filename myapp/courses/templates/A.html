@@ -1,0 +1,9 @@
+<h1>รายวิชาทั้งหมด</h1>
+<table>
+    {%for course in courses %}
+    <tr>
+        <td>{{course.course_id}}</td>
+        <td>{{course.course_name}}</td>
+    </tr>
+    {% endfor %}
+</table>
